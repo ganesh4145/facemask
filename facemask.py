@@ -7,10 +7,9 @@ Original file is located at
     https://colab.research.google.com/drive/1xmGyWKGws1zV1ITcuDrcCjXMbrHX0ycP
 """
 
-from mtcnn import MTCNN
 import cv2
-detector = MTCNN()
-#Load a videopip TensorFlow
+from mtcnn import MTCNN as mc
+mask = mc()
 video_capture = cv2.VideoCapture(0)
  
 while (True):
